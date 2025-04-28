@@ -291,6 +291,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = fullmoon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = fullmoon;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -331,12 +332,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"fullmoon/Preview Content\"";
-				DEVELOPMENT_TEAM = 2VT466P8NK;
+				DEVELOPMENT_TEAM = YQZQG7N4WG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = fullmoon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = fullmoon;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -353,7 +355,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = me.mainfra.fullmoon;
+				PRODUCT_BUNDLE_IDENTIFIER = me.mainfra.fullmoonn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = NO;
 				SDKROOT = auto;
@@ -394,10 +396,10 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		860E9CE22CB0564600C5BB52 /* XCRemoteSwiftPackageReference "mlx-swift-examples" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ml-explore/mlx-swift-examples/";
+			repositoryURL = "https://github.com/johnmai-dev/mlx-swift-examples";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.21.2;
+				branch = "20250428-Qwen3";
+				kind = branch;
 			};
 		};
 		860F26A22CBC31D6004E8D40 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
