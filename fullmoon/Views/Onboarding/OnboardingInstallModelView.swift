@@ -15,10 +15,10 @@ struct OnboardingInstallModelView: View {
     @State var selectedModel = ModelConfiguration.defaultModel
     let suggestedModel = ModelConfiguration.defaultModel
 
-    func sizeBadge(_ model: ModelConfiguration?) -> String? {
-        guard let size = model?.modelSize else { return nil }
-        return "\(size) GB"
-    }
+//    func sizeBadge(_ model: ModelConfiguration?) -> String? {
+//        guard let size = model?.modelSize else { return nil }
+//        return "\(size) GB"
+//    }
 
     var modelsList: some View {
         Form {
@@ -55,7 +55,7 @@ struct OnboardingInstallModelView: View {
                                 Image(systemName: "checkmark")
                             }
                         }
-                        .badge(sizeBadge(model))
+                        //.badge(sizeBadge(model))
                         #if os(macOS)
                             .buttonStyle(.borderless)
                         #endif
@@ -73,7 +73,7 @@ struct OnboardingInstallModelView: View {
                             Image(systemName: selectedModel.name == suggestedModel.name ? "checkmark.circle.fill" : "circle")
                         }
                     }
-                    .badge(sizeBadge(suggestedModel))
+                   // .badge(sizeBadge(suggestedModel))
                     #if os(macOS)
                         .buttonStyle(.borderless)
                     #endif
@@ -91,7 +91,7 @@ struct OnboardingInstallModelView: View {
                                 Image(systemName: selectedModel.name == model.name ? "checkmark.circle.fill" : "circle")
                             }
                         }
-                        .badge(sizeBadge(model))
+                      //  .badge(sizeBadge(model))
                         #if os(macOS)
                             .buttonStyle(.borderless)
                         #endif
